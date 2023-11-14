@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button group</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+    />
+
+    <style>
+        .container {
+            border: 5px solid rgb(72, 43, 43);
+        }
+        .row {
+            border: 10px solid rgb(110, 35, 148);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row pt-4">
+            <div class="col-12 py-3 text-center"> <!-- py-vertical padding -->
+                <h2 class="text-danger">Bootstrap button group class</h2>
+            </div>
+            <!-- <div class="col-12 py-3">
+                <div class="btn-group btn-group-lg">
+                    <button type="button" class="btn btn-primary">CLICK 1</button>
+                    <button type="button" class="btn btn-secondary">CLICK 2</button>
+                    <button type="button" class="btn btn-danger">CLICK 3</button>
+                </div>
+            </div>
+            <div class="col-12 py-3">
+                <div class="col-12 py-3">    
+                    <div class="btn-group my-5">
+                        <button type="button" class="btn btn-primary">CLICK 1</button>
+                        <button type="button" class="btn btn-secondary">CLICK 2</button>
+                        <button type="button" class="btn btn-danger">CLICK 3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 py-3">
+                <div class="btn-group btn-group-sm">
+                    <button type="button" class="btn btn-primary">CLICK 1</button>
+                    <button type="button" class="btn btn-secondary">CLICK 2</button>
+                    <button type="button" class="btn btn-danger">CLICK 3</button>
+                </div>
+            </div> -->
+            
+            <!-- <div class="col-12 py-3">
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">CLICK 1</button>
+                        <button type="button" class="btn btn-secondary">CLICK 2</button>
+                        <button type="button" class="btn btn-danger">CLICK 3</button>
+                    </div>
+                
+                    <div class="btn-toolbar mx-4">
+                        <button type="button" class="btn btn-primary">CLICK 1</button>
+                        <button type="button" class="btn btn-secondary">CLICK 2</button>    
+                    </div>
+                    <div class="btn-toolbar">
+                        <button type="button" class="btn btn-primary">CLICK 1</button>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- <div class="col-12 py-3">
+                <div class="btn-group"">
+                    <button type="button" class="btn btn-outline-primary">Left</button>
+                    <button type="button" class="btn btn-outline-primary">Middle</button>
+                    <button type="button" class="btn btn-outline-primary">Right</button>
+                  </div>
+            </div> -->
+
+            <!-- <div class="col-12 py-3">
+                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+                  
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-warning" for="btncheck2">Checkbox 2</label>
+                  
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btncheck3">Checkbox 3</label>
+                  </div>
+            </div> -->
+
+            
+
+            <!-- <div class="col-12 py-3">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        ((if we need 1 checkbox already checked we use attribute "checked"))
+                    <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-info" for="btnradio2">Radio 2</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="btnradio3">Radio 3</label>
+                  </div>
+            </div> -->
+
+            <div class="col-12 py-3">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-primary">1</button>
+                    <button type="button" class="btn btn-primary">2</button>
+                    <div class="btn-group" role="group">
+                        <button id="groupdrop" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="groupdrop">
+                            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 py-3">
+                <div class="btn-group-vertical">
+                    <button class="btn btn-primary" type="button">click 1</button>
+                    <button class="btn btn-success" type="button">click 2</button>
+                    <button class="btn btn-dark" type="button">click 3</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
+
+            
