@@ -28,7 +28,7 @@
             <!-- Another column with vertical padding of 3 -->
             <div class="col-12 py-3">
                 <div>
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#">Navbar</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +63,85 @@
                                 </form>
                             </div>
                         </div>
+                    </nav> -->
+
+                    <!-- <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+                        <div class="bg-dark p-4">
+                            <h5 class="text-body-emphasis h4">Collapsed content</h5>
+                            <span class="text-body-secondary">Toggleable via the navbar brand.</span>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-dark bg-dark">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </nav> -->
+
+                    <!-- offcanvas -->
+                    <!-- Navigation bar with a fixed-top class and a custom background color -->
+                    <nav class="navbar bg-body-tertiary fixed-top">
+                        <!-- Container fluid for responsive layout -->
+                        <div class="container-fluid">
+                        <!-- Navbar brand linking to the home page -->
+                        <a class="navbar-brand" href="#">Offcanvas navbar</a>
+                        
+                        <!-- Navbar toggler button for mobile view, triggering the offcanvas menu -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <!-- Offcanvas container -->
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <!-- Offcanvas header with a title and a close button -->
+                            <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            
+                            <!-- Offcanvas body containing navigation links and search form -->
+                            <div class="offcanvas-body">
+                            <!-- Navbar navigation links aligned to the end -->
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                <!-- Active home link -->
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                <!-- Regular link -->
+                                <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                <!-- Dropdown link with submenu -->
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <!-- Dropdown menu -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                    <!-- Horizontal divider in the dropdown menu -->
+                                    <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                            
+                            <!-- Search form with margin-top -->
+                            <form class="d-flex mt-3" role="search">
+                                <!-- Search input field -->
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <!-- Search button with outline style -->
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                            </div>
+                        </div>
+                        </div>
                     </nav>
+  
                 </div>
             </div>
         </div>
